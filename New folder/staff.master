@@ -1,0 +1,185 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="staff.master.cs" Inherits="staff" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <script type="text/javascript">
+    function PreventBack()
+    {
+    window.history.forward();
+    setTimeout("preventBack()",0);
+    window.onunload=function(){null};
+    }
+    </script>
+    <link href="StyleSheet4.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            height: 130px;
+        }
+        .style3
+        {
+            width: 449px;
+        }
+        .style4
+        {
+            width: 694px;
+        }
+        .style5
+        {
+            width: 58%;
+            height: 383px;
+            border: 1px solid #000000;
+            background-color: #0000FF;
+        }
+        .style6
+        {
+            height: 138px;
+            width: 301px;
+        }
+        .style7
+        {
+            height: 37px;
+            width: 301px;
+        }
+        .style8
+        {
+            height: 20px;
+            width: 301px;
+        }
+        .style9
+        {
+            width: 301px;
+        }
+        
+      
+        .st
+        {
+            height: 22px;
+        }
+         .form
+        {
+        	 background-image:url("img.jpg");
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+      
+    </style>
+
+
+</head>
+<body class="form">
+    <form id="form1" runat="server" max-width="500px">
+    <div style="height: 638px">
+        <table cellpadding="0" cellspacing="0" style="width: 100%; height: 639px;" 
+            frame="box">
+            <tr>
+                <td class="style1" colspan="3" align="center" bgcolor="White">
+                    <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/ealogo.png" 
+                        Width="1056px" />
+                </td>
+            </tr>
+            <tr bgcolor="Black">
+                <td class="st" colspan="2" align="center">
+                </td>
+                <td class="style10" align="right">
+                    <asp:Button ID="Button1" runat="server" BackColor="Black" BorderWidth="0px" 
+                        Font-Italic="True" Font-Size="13pt" ForeColor="White" 
+                        Text="Log out"  
+                        onmouseover="this.style.color='red'"
+                                    onmouseout="this.style.color='white'" onclick="Button1_Click" 
+                        Height="21px"/>
+                </td>
+            </tr>
+            <tr >
+                <td class="style3">
+                    <table border="1" cellpadding="0" cellspacing="0" class="style5">
+                        <tr>
+                            <td align="center" bgcolor="White" class="style6">
+                                <asp:Image ID="Image2" runat="server" Width="90px" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="White" class="style7">
+                                <asp:Label ID="Label1" runat="server" ForeColor="#0033CC"></asp:Label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="White" class="style8">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style9">
+                                <asp:Button ID="Button2" runat="server" BackColor="Blue" BorderWidth="0px" 
+                                    Font-Size="13pt" Text="HOME" Width="259px" 
+                                    onmouseover="this.style.backgroundColor='Yellow'"
+                                    onmouseout="this.style.backgroundColor='Blue'" onclick="Button2_Click" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style9">
+                                <asp:Button ID="Button3" runat="server" BackColor="Blue" BorderWidth="0px" 
+                                    Font-Size="13pt" Text="ADD STUDENT" Width="259px" 
+                                     onmouseover="this.style.backgroundColor='Yellow'"
+                                    onmouseout="this.style.backgroundColor='Blue'" onclick="Button3_Click"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style9">
+                                <asp:Button ID="Button5" runat="server" BackColor="Blue" BorderWidth="0px" 
+                                    Font-Size="13pt" Text="STUDENT REPORT" Width="259px" 
+                                     onmouseover="this.style.backgroundColor='Yellow'"
+                                    onmouseout="this.style.backgroundColor='Blue'" onclick="Button5_Click"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style9">
+                                <asp:Button ID="Button6" runat="server" BackColor="Blue" BorderWidth="0px" 
+                                    Font-Size="13pt" Text="ATTENDANCE" Width="259px" 
+                                     onmouseover="this.style.backgroundColor='Yellow'"
+                                    onmouseout="this.style.backgroundColor='Blue'" onclick="Button6_Click"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style9">
+                                <asp:Button ID="Button7" runat="server" BackColor="Blue" BorderWidth="0px" 
+                                    Font-Size="13pt" Text="ATTENDANCE REPORT" Width="259px" 
+                                     onmouseover="this.style.backgroundColor='Yellow'"
+                                    onmouseout="this.style.backgroundColor='Blue'" onclick="Button7_Click"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style9">
+                                <asp:Button ID="Button8" runat="server" BackColor="Blue" BorderWidth="0px" 
+                                    Font-Size="13pt" Text="ADVANCED REPORT" Width="259px" 
+                                     onmouseover="this.style.backgroundColor='Yellow'"
+                                    onmouseout="this.style.backgroundColor='Blue'" onclick="Button8_Click"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style9">
+                                <asp:Button ID="Button9" runat="server" BackColor="Blue" BorderWidth="0px" 
+                                    Font-Size="13pt" Height="32px" style="margin-bottom: 2px" Text="PASSWORD" 
+                                    Width="257px" 
+                                     onmouseover="this.style.backgroundColor='Yellow'"
+                                    onmouseout="this.style.backgroundColor='Blue'" onclick="Button9_Click"/>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="style4">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

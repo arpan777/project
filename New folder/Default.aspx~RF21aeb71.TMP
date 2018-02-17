@@ -1,0 +1,69 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true"  CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            top: 3px;
+            left: 10px;
+            position: absolute;
+            height: 578px;
+        }
+        .style2
+        {
+            height: 114px;
+            background-color: #993333;
+            text-align:center;
+        }
+        .style3
+        {
+            height: 64px;
+            
+           
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="menu">
+    <table class="style1" cellpadding="0" cellspacing="0">
+        <tr>
+            <td class="style2" colspan="2" >
+            <h1><img src="ealogo.png" width ="80%" height="100px"/></h1>
+                </td>
+        </tr>
+        <tr>
+            <td class="style3">
+            
+               <ul>
+               <li><a href="#">Help</a></li>
+               <li><a href="#">Contact Us</a></li>
+               <li><a href="#">About Us</a>
+               <ul>
+               <li><a href="#">Objectives</a></li>
+               <li><a href="#">Onine Exam</a></li>
+               <li><a href="#">working</a></li>
+               </ul>
+               </li>
+               <li><a href="#">Home </a></li>
+               </ul>
+            
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+       
+    </table>
+     </div>
+    </form>
+</body>
+</html>
